@@ -32,6 +32,10 @@ const minSpace = .8
 //The area is starting with 20 plants
 const plant =  20
 
+//how much space does each plant get 
+const plantArea = minSpace / plant
+console.log(plantArea)
+
 //The plants double in number every week
 const growthWeek1= 20
 const growthWeek2 = growthWeek1 * 2
@@ -39,3 +43,12 @@ const growthWeek3= growthWeek2 * 2
 console.log(growthWeek1)
 console.log(growthWeek2)
 console.log(growthWeek3)
+
+//should the plants be pruned, monitored or planted
+
+if(pruned = growthWeek1 >= minSpace){
+     console.log("time to prune")
+}
+    else {
+        console.log("do not prune");
+    }
